@@ -1,4 +1,5 @@
 import React from 'react';
+import Product from '../components/Product';
 
 const products = [
   {
@@ -29,8 +30,15 @@ const products = [
 
 const Home = () => {
   return (
-    <div className='Home'>
-      Home page
+    <div>
+      <div className='Home'>
+        Home page
+      </div>
+      {
+        products.map((product) => (
+          <Product name={product.name} price={product.price}/>
+        ))
+      }
     </div>
   );
 }
