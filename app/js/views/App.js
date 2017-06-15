@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
+import React, {PropTypes} from 'react';
+import Menu from '../layouts/Menu';
 
-import Menu from 'components/Global/Menu';
-
-export default class About extends Component {
-  render() {
-    const { children } = this.props; // eslint-disable-line
-
+const App = ({children}) => {
     return (
       <div className='About'>
         <Menu />
         { children }
       </div>
     );
-  }
+}
+
+export default App;
+
+App.propTypes = {
+  children: PropTypes.any
 }
