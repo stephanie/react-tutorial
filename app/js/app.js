@@ -22,5 +22,5 @@ ReactDOM.render(
       </Route>
     </Router>
   </Provider>,
-  document.getElementById('app') // eslint-disable-line
+  document.getElementById('app')
 );
