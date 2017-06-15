@@ -1,12 +1,10 @@
 import React, {PropTypes} from 'react';
 import Menu from '../layouts/Menu';
-import Cart from '../components/Cart';
 
 const App = ({children}) => {
     return (
       <div>
         <Menu />
-        <Cart />
         { children }
       </div>
     );
